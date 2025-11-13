@@ -153,6 +153,85 @@ main section{ height: 650; display:flex; align-items:center; justify-content:cen
   padding: 10px;
 }
 
+
+/*******************************************************************************************/
+
+.gallery-layout{
+  margin-top: 20px;
+  padding: 16px;
+  background: #d8ebc8;          /* verde suave */
+  border: 1px solid #b1caa2;
+  display: flex;
+  gap: 16px;
+}
+
+/* Columna izquierda */
+.gallery-sidebar{
+  flex: 0 0 160px;              /* ancho fijo aprox */
+  border: 1px solid #a0b890;
+  padding: 10px;
+  background: #cfe4b9;
+}
+
+.gallery-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gallery-list li{
+  background: #d9e7ff;          /* azul claro como los cuadritos */
+  border: 1px solid #9fb1d6;
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Zona derecha */
+.gallery-main{
+  flex: 1;
+  border: 1px solid #a0b890;
+  padding: 16px;
+  background: #cfe4b9;
+}
+
+/* Grid de imágenes */
+.gallery-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.gallery-item{
+  flex: 0 0 calc(25% - 12px);   /* 4 columnas aprox */
+  background: #d9e7ff;          /* azul cuadrito */
+  border: 1px solid #9fb1d6;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.gallery-item img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/***********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===== Back-to-top (no reserva espacio) ===== */
 .back-to-top-fixed{
   position: fixed;
@@ -176,6 +255,11 @@ main section{ height: 650; display:flex; align-items:center; justify-content:cen
   /* transition: transform .15s ease; */
 }
 .back-to-top-fixed:hover img{ transform: translateY(-2px); }
+
+
+
+
+
 
 
 /* ===== Footer ===== */
